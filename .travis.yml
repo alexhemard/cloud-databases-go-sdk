@@ -2,8 +2,7 @@ language: go
 
 dist: bionic
 
-go: "1.14.x"
-
+go: "1.19.x"
 
 notifications:
   email: true
@@ -36,5 +35,5 @@ deploy:
     script: npx semantic-release
     skip_cleanup: true
     on:
-      go: '1.14.x'
+      go: '1.19.x'
       branch: main
